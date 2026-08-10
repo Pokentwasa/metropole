@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://metropole.co.za/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Fonts loaded in styles.css @import -->
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Metropole Student Accommodation","url":"https://metropole.co.za","telephone":"+27664517446","email":"rentals@metropole.co.za","address":{"@type":"PostalAddress","addressLocality":"Cape Town","addressRegion":"Western Cape","addressCountry":"ZA"},"priceRange":"R9,775 - R12,500 per month","description":"Cape Town's leading premium student accommodation network with six locations across the city."}
@@ -57,20 +57,20 @@
           <span class="hud-label">Featured</span>
           <span class="hud-live"><span class="hud-dot"></span>Live</span>
         </div>
-        <h3 class="hud-name">Green Point</h3>
+        <div class="hud-place">Green <em>Point</em></div>
         <div class="hud-stats">
-          <div class="hud-stat"><span class="hud-stat-num">4</span><span class="hud-stat-label">Rooms Available</span></div>
-          <div class="hud-stat"><span class="hud-stat-num">R9,775</span><span class="hud-stat-label">From / month</span></div>
-          <div class="hud-stat"><span class="hud-stat-num">R400</span><span class="hud-stat-label">Admin Fee</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">4</span><span class="hud-stat-l">Rooms Available</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">R9,775</span><span class="hud-stat-l">From / month</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">R400</span><span class="hud-stat-l">Admin Fee</span></div>
         </div>
-        <a href="#location-green-point" data-route="location-green-point" class="btn btn--gold btn--sm" style="width:100%;justify-content:center;margin-top:4px" data-attribution="hero_hud" data-event="hud_view_click" data-location="green-point">View Rooms →</a>
+        <a href="#location-green-point" data-route="location-green-point" class="btn btn--fill btn--sm" style="width:100%;justify-content:center;margin-top:4px" data-attribution="hero_hud" data-event="hud_view_click" data-location="green-point">View Rooms →</a>
       </div>
 
       <!-- Bold headline — bottom left -->
       <div class="hero-headline">
         <span class="hero-badge">6 Locations Across Cape Town</span>
         <h1 class="hero-title">Premium Student<br>Accommodation<br>Cape Town</h1>
-        <p class="hero-sub">Modern, Secure Living for Focused Students</p>
+        <p class="hero-sub-text">Modern, Secure Living for Focused Students</p>
       </div>
 
       <!-- Search bar — anchored bottom -->
@@ -119,53 +119,53 @@
             <option>R13,000+</option>
           </select>
         </div>
-        <a href="#locations" data-route="locations" class="btn btn--gold search-btn" data-attribution="hero_search" data-event="search_submit">Search Rooms</a>
+        <button class="search-cta" data-attribution="hero_search" data-event="search_submit">Search Rooms</button>
       </div>
     </div>
 
     <!-- TRUST BANNER -->
     <div class="trust">
       <span class="trust-label">Trusted by students from</span>
-      <div class="trust-logos">
-        <span>UCT</span><span class="t-sep">•</span>
-        <span>GSB</span><span class="t-sep">•</span>
-        <span>CPUT</span><span class="t-sep">•</span>
-        <span>Red & Yellow</span><span class="t-sep">•</span>
-        <span>FEDISA</span><span class="t-sep">•</span>
-        <span>VEGA</span>
-      </div>
+      <div 
+        <span class="trust-school">UCT</span><span class="trust-sep">•</span>
+        <span class="trust-school">GSB</span><span class="trust-sep">•</span>
+        <span class="trust-school">CPUT</span><span class="trust-sep">•</span>
+        <span class="trust-school">Red & Yellow</span><span class="trust-sep">•</span>
+        <span class="trust-school">FEDISA</span><span class="trust-sep">•</span>
+        <span class="trust-school">VEGA</span>
+      
     </div>
 
     <!-- QUICK LINKS -->
     <div class="quick-section">
-      <span class="section-eyebrow">The Buildings</span><h2 class="section-title">Six Locations.<br>One Standard.</h2>
+      <div class="eyebrow"><span>The Buildings</span></div><h2 class="t-heading" style="font-size:clamp(32px,4.5vw,56px);letter-spacing:-.02em;font-family:var(--serif);font-weight:400">Six Locations.<br><em>One Standard.</em></h2>
       <div class="quick-grid">
-        <a href="#location-rosebank" data-route="location-rosebank" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="rosebank">
-          <span class="q-num">01</span><h3>Rosebank</h3><p>Upscale contemporary living</p><span class="q-arrow">→</span>
+        <a href="#location-rosebank" data-route="location-rosebank" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="rosebank">
+          <span class="q-num">01</span><span class="q-place">Rosebank</h3><p>Upscale contemporary living</p><span class="q-arrow">→</span>
         </a>
-        <a href="#location-green-point" data-route="location-green-point" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="green-point">
-          <span class="q-num">02</span><h3>Green Point</h3><p>Premium co-living, rooftop pool</p><span class="q-arrow">→</span>
+        <a href="#location-green-point" data-route="location-green-point" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="green-point">
+          <span class="q-num">02</span><span class="q-place">Green Point</h3><p>Premium co-living, rooftop pool</p><span class="q-arrow">→</span>
         </a>
-        <a href="#location-east-of-main" data-route="location-east-of-main" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="east-of-main">
-          <span class="q-num">03</span><h3>East of Main</h3><p>Sea Point senior living</p><span class="q-arrow">→</span>
+        <a href="#location-east-of-main" data-route="location-east-of-main" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="east-of-main">
+          <span class="q-num">03</span><span class="q-place">East of Main</h3><p>Sea Point senior living</p><span class="q-arrow">→</span>
         </a>
-        <a href="#location-kloof-nek" data-route="location-kloof-nek" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="kloof-nek">
-          <span class="q-num">04</span><h3>Kloof Nek</h3><p>Mountain views, elevated living</p><span class="q-arrow">→</span>
+        <a href="#location-kloof-nek" data-route="location-kloof-nek" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="kloof-nek">
+          <span class="q-num">04</span><span class="q-place">Kloof Nek</h3><p>Mountain views, elevated living</p><span class="q-arrow">→</span>
         </a>
-        <a href="#location-the-york" data-route="location-the-york" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="the-york">
-          <span class="q-num">05</span><h3>The York</h3><p>Boutique CBD urban living</p><span class="q-arrow">→</span>
+        <a href="#location-the-york" data-route="location-the-york" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="the-york">
+          <span class="q-num">05</span><span class="q-place">The York</h3><p>Boutique CBD urban living</p><span class="q-arrow">→</span>
         </a>
-        <a href="#location-vredehoek" data-route="location-vredehoek" class="quick-card glass" data-attribution="home_quicklink" data-event="location_click" data-location="vredehoek">
-          <span class="q-num">06</span><h3>Florida Road</h3><p>Modern new-build, Vredehoek</p><span class="q-arrow">→</span>
+        <a href="#location-vredehoek" data-route="location-vredehoek" class="quick-card" data-attribution="home_quicklink" data-event="location_click" data-location="vredehoek">
+          <span class="q-num">06</span><span class="q-place">Florida Road</h3><p>Modern new-build, Vredehoek</p><span class="q-arrow">→</span>
         </a>
       </div>
     </div>
 
     <!-- HOME CTA -->
-    <div class="home-cta glass">
-      <h2>Spaces are limited.</h2>
-      <p>Secure your spot today and experience what elevated student living truly feels like.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="home_bottom" data-event="cta_click">Secure Your Space</a>
+    <div class="about-cta-bar glass">
+      <h2 class="t-heading" style="font-family:var(--serif);font-weight:400;letter-spacing:-.02em;margin-bottom:12px">Spaces are <em>limited.</em></h2>
+      <p class="t-body" style="max-width:360px;margin:0 auto 28px">Secure your spot today and experience what elevated student living truly feels like.</p>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="home_bottom" data-event="cta_click">Secure Your Space</a>
     </div>
   </section>
 
@@ -173,39 +173,36 @@
   <section class="view" data-view="about">
     <div class="page-wrap">
     <div class="page-head">
-      <span class="page-eyebrow">About Metropole</span>
-      <h1 class="page-title">Cape Town's Leading<br><span>Student Accommodation Network</span></h1>
+      <div class="eyebrow"><span>About Metropole</span></div>
+      <h1 class="t-display">Cape Town's Leading<br><em>Student Accommodation</em><br>Network</h1>
     </div>
-    <div >
-      <p>Metropole has been providing premium student accommodation across Cape Town for over a decade. From Rosebank to Sea Point, Green Point to the City Bowl — we place students at the heart of the city, close to campus, and surrounded by everything they need to thrive.</p>
-      <p>Every Metropole property is fully managed, accredited, and designed with the modern student in mind. Whether you're in your first year or finishing your degree, there's a Metropole that's right for you.</p>
-    </p></div>
+    <p class="about-lead">Metropole has been providing premium student accommodation across Cape Town for over a decade. From Rosebank to Sea Point, Green Point to the City Bowl — we place students at the heart of the city, close to campus, and surrounded by everything they need to thrive.<br><br>Every Metropole property is fully managed, accredited, and designed with the modern student in mind. Whether you're in your first year or finishing your degree, there's a Metropole that's right for you.</p>
     <div class="features-grid">
-      <div class="feature-card glass">
+      <div class="feature-card">
         <div class="f-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg></div>
-        <h3>High-Speed Wi-Fi</h3>
+        <span class="q-place">High-Speed Wi-Fi</h3>
         <p>Uncapped fibre in every room. Study, stream, and connect without limits.</p>
       </div>
-      <div class="feature-card glass">
+      <div class="feature-card">
         <div class="f-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>24-Hour Security</h3>
+        <span class="q-place">24-Hour Security</h3>
         <p>Biometric access, CCTV, armed response, and panic buttons throughout.</p>
       </div>
-      <div class="feature-card glass">
+      <div class="feature-card">
         <div class="f-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <h3>Fully Furnished</h3>
+        <span class="q-place">Fully Furnished</h3>
         <p>Double bed, study desk, wardrobe — move in with just your suitcase.</p>
       </div>
-      <div class="feature-card glass">
+      <div class="feature-card">
         <div class="f-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-        <h3>Managed & Accredited</h3>
+        <span class="q-place">Managed & Accredited</h3>
         <p>Professional on-site management and full accreditation at every property.</p>
       </div>
     </div>
-    <div class="home-cta glass">
-      <h2>A decade of excellence.</h2>
-      <p>Join the community of students who call Metropole home.</p>
-      <a href="#locations" data-route="locations" class="btn btn--gold" data-attribution="about" data-event="view_locations_click">View Our Locations</a>
+    <div class="about-cta-bar glass">
+      <h3>A decade of <em>excellence.</em></h3>
+      
+      <a href="#locations" data-route="locations" class="btn btn--fill" data-attribution="about" data-event="view_locations_click">View Our Locations</a>
     </div>
   </section>
 
@@ -213,62 +210,62 @@
   <section class="view" data-view="locations">
     <div class="page-wrap">
     <div class="page-head">
-      <span class="page-eyebrow">The Portfolio</span>
-      <h1 class="page-title">Six carefully selected<br><span>locations.</span></h1>
+      <div class="eyebrow"><span>The Portfolio</span></div>
+      <h1 class="t-display">Six carefully<br><em>selected locations.</em></h1>
     </div>
     <div class="loc-grid">
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80&fit=crop" alt="Metropole Rosebank" loading="lazy"><span class="loc-badge">2nd–4th Years</span></div>
         <div class="loc-info">
-          <h3>Rosebank</h3>
+          <span class="q-place">Rosebank</h3>
           <p>An upscale, secure, and contemporary living experience in the heart of vibrant Rosebank. 2 bed 2 bath units with balconies and full kitchens.</p>
           <div class="loc-meta"><span>4 Grosvenor Road</span></div>
-          <a href="#location-rosebank" data-route="location-rosebank" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="rosebank">View Rooms &amp; Pricing</a>
+          <a href="#location-rosebank" data-route="location-rosebank" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="rosebank">View Rooms &amp; Pricing</a>
         </div>
       </div>
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80&fit=crop" alt="Metropole Green Point" loading="lazy"><span class="loc-badge loc-badge--gold">Rooftop Pool</span></div>
         <div class="loc-info">
-          <h3>Green Point</h3>
+          <span class="q-place">Green Point</h3>
           <p>Premium co-living minutes from the V&A Waterfront and Cape Town Stadium. Rooftop pool, social lounge, and fully equipped communal kitchens.</p>
           <div class="loc-meta"><span>From R9,775 /month</span></div>
-          <a href="#location-green-point" data-route="location-green-point" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="green-point">View Rooms & Pricing</a>
+          <a href="#location-green-point" data-route="location-green-point" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="green-point">View Rooms & Pricing</a>
         </div>
       </div>
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80&fit=crop" alt="Metropole East of Main" loading="lazy"><span class="loc-badge">Senior Students</span></div>
         <div class="loc-info">
-          <h3>East of Main — Sea Point</h3>
+          <span class="q-place">East of Main — Sea Point</h3>
           <p>Upscale co-living for senior and articled students, situated between Sea Point's lively Main Road and serene High Level Road.</p>
           <div class="loc-meta"><span>From R12,200 /month</span></div>
-          <a href="#location-east-of-main" data-route="location-east-of-main" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="east-of-main">View Rooms &amp; Pricing</a>
+          <a href="#location-east-of-main" data-route="location-east-of-main" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="east-of-main">View Rooms &amp; Pricing</a>
         </div>
       </div>
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80&fit=crop" alt="Metropole Kloof Nek" loading="lazy"><span class="loc-badge">Mountain Views</span></div>
         <div class="loc-info">
-          <h3>Kloof Nek</h3>
+          <span class="q-place">Kloof Nek</h3>
           <p>Elevated living at the base of Table Mountain. Modern furnished rooms for 3rd and 4th-year students and young professionals, minutes from Kloof Street.</p>
           <div class="loc-meta"><span>From R12,500 /month</span></div>
-          <a href="#location-kloof-nek" data-route="location-kloof-nek" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="kloof-nek">View Rooms &amp; Pricing</a>
+          <a href="#location-kloof-nek" data-route="location-kloof-nek" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="kloof-nek">View Rooms &amp; Pricing</a>
         </div>
       </div>
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80&fit=crop" alt="Metropole The York" loading="lazy"><span class="loc-badge">CBD</span></div>
         <div class="loc-info">
-          <h3>The York</h3>
+          <span class="q-place">The York</h3>
           <p>Boutique urban student living at 1 Buiten Street. Co-working spaces, fitness centre, 24hr security, and mountain views in the heart of the city.</p>
           <div class="loc-meta"><span>1 Buiten Street, City Bowl</span></div>
-          <a href="#location-the-york" data-route="location-the-york" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="the-york">View Rooms &amp; Pricing</a>
+          <a href="#location-the-york" data-route="location-the-york" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="the-york">View Rooms &amp; Pricing</a>
         </div>
       </div>
-      <div class="loc-card glass">
+      <div class="loc-card">
         <div class="loc-img"><img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800&q=80&fit=crop" alt="Metropole Florida Road Vredehoek" loading="lazy"><span class="loc-badge loc-badge--gold">New Build</span></div>
         <div class="loc-info">
-          <h3>Florida Road — Vredehoek</h3>
+          <span class="q-place">Florida Road — Vredehoek</h3>
           <p>Modern student living on Florida Road. Biometric access control, 24/7 CCTV, armed response — safe, stylish, and close to campus.</p>
           <div class="loc-meta"><span>Vredehoek</span></div>
-          <a href="#location-vredehoek" data-route="location-vredehoek" class="btn btn--gold btn--sm" data-attribution="locations" data-event="view_rooms_click" data-location="vredehoek">View Rooms &amp; Pricing</a>
+          <a href="#location-vredehoek" data-route="location-vredehoek" class="btn btn--link" data-attribution="locations" data-event="view_rooms_click" data-location="vredehoek">View Rooms &amp; Pricing</a>
         </div>
       </div>
     </div>
@@ -294,9 +291,9 @@
           <span class="hud-live"><span class="hud-dot"></span>Live Availability</span>
         </div>
         <div class="hud-stats">
-          <div class="hud-stat"><span class="hud-stat-num">4</span><span class="hud-stat-label">Available Now</span></div>
-          <div class="hud-stat"><span class="hud-stat-num">R9,775</span><span class="hud-stat-label">From / month</span></div>
-          <div class="hud-stat"><span class="hud-stat-num">R400</span><span class="hud-stat-label">Admin Fee</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">4</span><span class="hud-stat-l">Available Now</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">R9,775</span><span class="hud-stat-l">From / month</span></div>
+          <div class="hud-stat"><span class="hud-stat-n">R400</span><span class="hud-stat-l">Admin Fee</span></div>
         </div>
         <p class="hud-note">Incl. Wi-Fi · Utilities · Security</p>
       </div>
@@ -309,16 +306,16 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>Rooftop Pool</h4><p>Incredible views + social area</p></div>
-      <div class="hl-card glass"><h4>Communal Kitchens</h4><p>Fully kitted, top floor + first floor</p></div>
-      <div class="hl-card glass"><h4>MyCiti Access</h4><p>Steps from public transport</p></div>
-      <div class="hl-card glass"><h4>V&A Waterfront</h4><p>Minutes from the city's best</p></div>
+      <div class="hl-card"><h4>Rooftop Pool</h4><p>Incredible views + social area</p></div>
+      <div class="hl-card"><h4>Communal Kitchens</h4><p>Fully kitted, top floor + first floor</p></div>
+      <div class="hl-card"><h4>MyCiti Access</h4><p>Steps from public transport</p></div>
+      <div class="hl-card"><h4>V&A Waterfront</h4><p>Minutes from the city's best</p></div>
     </div>
 
     <!-- ROOM GRID + FILTERS -->
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
-      <h2 class="section-title">Rooms & <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="rooms-header"><h2>Rooms &amp; Pricing</h2></div>
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -338,47 +335,48 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room 101</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Single En-suite</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R9,775 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="101">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="101">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Room 204</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Single En-suite</span><span>Male Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R10,250 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="204">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="204">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Room 305</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Premium Single</span><span>Mixed Floor</span><span>3rd Floor — Pool Level</span></div>
           <div class="room-price">R11,500 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="305">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="305">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Room 102</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Single En-suite</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R9,775 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="male">
+        <div class="room-card" data-status="taken" data-gender="male">
           <div class="room-top"><h4>Room 201</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Single En-suite</span><span>Male Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R10,250 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room 108</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Single Standard</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R9,775 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="108">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-room="108">Book This Room</a>
         </div>
       </div>
     </div>
 
     <!-- FINANCIAL DETAILS -->
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R9,775</span><span class="fin-note">Per person, per month</span></div>
@@ -387,7 +385,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">Deposit required to secure booking. Lease terms align with the academic year. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="green-point">Apply for Green Point</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="green-point">Apply for Green Point</a>
     </div>
   </section>
 
@@ -405,15 +403,15 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>2 Bed 2 Bath</h4><p>72m² units with balconies</p></div>
-      <div class="hl-card glass"><h4>Full Kitchens</h4><p>Fridge, stove, oven, microwave</p></div>
-      <div class="hl-card glass"><h4>Furnished</h4><p>Double bed, desk, wardrobe</p></div>
-      <div class="hl-card glass"><h4>Lounge + TV</h4><p>Couch & TV in every unit</p></div>
+      <div class="hl-card"><h4>2 Bed 2 Bath</h4><p>72m² units with balconies</p></div>
+      <div class="hl-card"><h4>Full Kitchens</h4><p>Fridge, stove, oven, microwave</p></div>
+      <div class="hl-card"><h4>Furnished</h4><p>Double bed, desk, wardrobe</p></div>
+      <div class="hl-card"><h4>Lounge + TV</h4><p>Couch & TV in every unit</p></div>
     </div>
 
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
       <h2 class="section-title">Rooms &amp; <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -433,46 +431,47 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Unit 1A</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Female Unit</span><span>Ground Floor</span></div>
           <div class="room-price">R10,500 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 1A">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 1A">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Unit 2B</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Male Unit</span><span>1st Floor</span></div>
           <div class="room-price">R10,500 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 2B">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 2B">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Unit 3C</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Mixed Unit</span><span>2nd Floor</span></div>
           <div class="room-price">R11,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 3C">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 3C">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Unit 1B</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Female Unit</span><span>Ground Floor</span></div>
           <div class="room-price">R10,500 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="male">
+        <div class="room-card" data-status="taken" data-gender="male">
           <div class="room-top"><h4>Unit 2A</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Male Unit</span><span>1st Floor</span></div>
           <div class="room-price">R10,500 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Unit 3A</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>2 Bed 2 Bath · 72m²</span><span>Mixed Unit</span><span>2nd Floor</span></div>
           <div class="room-price">R11,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 3A">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="rosebank" data-room="Unit 3A">Book This Room</a>
         </div>
       </div>
     </div>
 
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R10,500</span><span class="fin-note">Per person, per month</span></div>
@@ -481,7 +480,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">4 Grosvenor Road, Rosebank, Cape Town · Deposit required to secure booking. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="rosebank">Apply for Rosebank</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="rosebank">Apply for Rosebank</a>
     </div>
   </section>
 
@@ -499,15 +498,15 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>Senior Students</h4><p>Articled & postgrad focused</p></div>
-      <div class="hl-card glass"><h4>Adjacent Park</h4><p>Tranquil green setting</p></div>
-      <div class="hl-card glass"><h4>Lion's Head</h4><p>Minutes from the trailhead</p></div>
-      <div class="hl-card glass"><h4>Beaches</h4><p>Clifton & Camps Bay nearby</p></div>
+      <div class="hl-card"><h4>Senior Students</h4><p>Articled & postgrad focused</p></div>
+      <div class="hl-card"><h4>Adjacent Park</h4><p>Tranquil green setting</p></div>
+      <div class="hl-card"><h4>Lion's Head</h4><p>Minutes from the trailhead</p></div>
+      <div class="hl-card"><h4>Beaches</h4><p>Clifton & Camps Bay nearby</p></div>
     </div>
 
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
       <h2 class="section-title">Rooms &amp; <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -527,46 +526,47 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room 12</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Co-sharing Apartment</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 12">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 12">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Room 14</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Co-sharing Apartment</span><span>Male Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 14">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 14">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Room 21</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Premium Co-share</span><span>Mixed Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R13,400 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 21">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 21">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Room 11</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Co-sharing Apartment</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,200 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="mixed">
+        <div class="room-card" data-status="taken" data-gender="mixed">
           <div class="room-top"><h4>Room 22</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Premium Co-share</span><span>Mixed Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R13,400 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Room 15</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Co-sharing Apartment</span><span>Male Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 15">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="east-of-main" data-room="Room 15">Book This Room</a>
         </div>
       </div>
     </div>
 
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R12,200</span><span class="fin-note">Per person, per month</span></div>
@@ -575,7 +575,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">Sea Point, Cape Town · Deposit required to secure booking. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="east-of-main">Apply for East of Main</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="east-of-main">Apply for East of Main</a>
     </div>
   </section>
 
@@ -593,15 +593,15 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>Table Mountain</h4><p>National Park at your doorstep</p></div>
-      <div class="hl-card glass"><h4>Kloof Street</h4><p>Cafés, boutiques, hangouts</p></div>
-      <div class="hl-card glass"><h4>MyCiti Routes</h4><p>Steps from public transport</p></div>
-      <div class="hl-card glass"><h4>Mountain Views</h4><p>Iconic Cape Town outlook</p></div>
+      <div class="hl-card"><h4>Table Mountain</h4><p>National Park at your doorstep</p></div>
+      <div class="hl-card"><h4>Kloof Street</h4><p>Cafés, boutiques, hangouts</p></div>
+      <div class="hl-card"><h4>MyCiti Routes</h4><p>Steps from public transport</p></div>
+      <div class="hl-card"><h4>Mountain Views</h4><p>Iconic Cape Town outlook</p></div>
     </div>
 
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
       <h2 class="section-title">Rooms &amp; <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -621,46 +621,47 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Apt 101</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Furnished Studio</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,500 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 101">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 101">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Apt 203</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Furnished Studio</span><span>Male Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R12,500 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 203">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 203">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Apt 301</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Mountain View Studio</span><span>Mixed Floor</span><span>3rd Floor</span></div>
           <div class="room-price">R14,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 301">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 301">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Apt 102</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Furnished Studio</span><span>Female Floor</span><span>1st Floor</span></div>
           <div class="room-price">R12,500 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="male">
+        <div class="room-card" data-status="taken" data-gender="male">
           <div class="room-top"><h4>Apt 201</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Furnished Studio</span><span>Male Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R12,500 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Apt 302</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Mountain View Studio</span><span>Mixed Floor</span><span>3rd Floor</span></div>
           <div class="room-price">R14,200 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 302">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="kloof-nek" data-room="Apt 302">Book This Room</a>
         </div>
       </div>
     </div>
 
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R12,500</span><span class="fin-note">Per person, per month</span></div>
@@ -669,7 +670,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">Kloof Nek, Cape Town · Deposit required to secure booking. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="kloof-nek">Apply for Kloof Nek</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="kloof-nek">Apply for Kloof Nek</a>
     </div>
   </section>
 
@@ -687,15 +688,15 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>Co-Working Spaces</h4><p>Dedicated study & work zones</p></div>
-      <div class="hl-card glass"><h4>Fitness Centre</h4><p>On-site gym facilities</p></div>
-      <div class="hl-card glass"><h4>24hr Security</h4><p>Biometric access control</p></div>
-      <div class="hl-card glass"><h4>Mountain Views</h4><p>City Bowl outlook</p></div>
+      <div class="hl-card"><h4>Co-Working Spaces</h4><p>Dedicated study & work zones</p></div>
+      <div class="hl-card"><h4>Fitness Centre</h4><p>On-site gym facilities</p></div>
+      <div class="hl-card"><h4>24hr Security</h4><p>Biometric access control</p></div>
+      <div class="hl-card"><h4>Mountain Views</h4><p>City Bowl outlook</p></div>
     </div>
 
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
       <h2 class="section-title">Rooms &amp; <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -715,46 +716,47 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room 401</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Boutique Single</span><span>Female Floor</span><span>4th Floor</span></div>
           <div class="room-price">R11,800 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 401">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 401">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Room 502</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Boutique Single</span><span>Male Floor</span><span>5th Floor</span></div>
           <div class="room-price">R11,800 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 502">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 502">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Room 601</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Penthouse Single</span><span>Mixed Floor</span><span>6th Floor</span></div>
           <div class="room-price">R13,900 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 601">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 601">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Room 402</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Boutique Single</span><span>Female Floor</span><span>4th Floor</span></div>
           <div class="room-price">R11,800 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="male">
+        <div class="room-card" data-status="taken" data-gender="male">
           <div class="room-top"><h4>Room 503</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Boutique Single</span><span>Male Floor</span><span>5th Floor</span></div>
           <div class="room-price">R11,800 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room 404</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Boutique Single</span><span>Female Floor</span><span>4th Floor</span></div>
           <div class="room-price">R11,800 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 404">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="the-york" data-room="Room 404">Book This Room</a>
         </div>
       </div>
     </div>
 
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R11,800</span><span class="fin-note">Per person, per month</span></div>
@@ -763,7 +765,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">1 Buiten Street, City Bowl, Cape Town · Deposit required to secure booking. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="the-york">Apply for The York</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="the-york">Apply for The York</a>
     </div>
   </section>
 
@@ -781,15 +783,15 @@
     </div>
 
     <div class="loc-highlights">
-      <div class="hl-card glass"><h4>Biometric Access</h4><p>Fingerprint entry control</p></div>
-      <div class="hl-card glass"><h4>24/7 CCTV</h4><p>Full building coverage</p></div>
-      <div class="hl-card glass"><h4>Armed Response</h4><p>Rapid on-call security</p></div>
-      <div class="hl-card glass"><h4>Panic Buttons</h4><p>Throughout the building</p></div>
+      <div class="hl-card"><h4>Biometric Access</h4><p>Fingerprint entry control</p></div>
+      <div class="hl-card"><h4>24/7 CCTV</h4><p>Full building coverage</p></div>
+      <div class="hl-card"><h4>Armed Response</h4><p>Rapid on-call security</p></div>
+      <div class="hl-card"><h4>Panic Buttons</h4><p>Throughout the building</p></div>
     </div>
 
     <div class="rooms-section" style="padding:64px 48px 80px;max-width:1400px;margin:0 auto">
       <h2 class="section-title">Rooms &amp; <span>Pricing</span></h2>
-      <div class="filters glass">
+      <div class="filters">
         <div class="filter-group">
           <label>Status</label>
           <select class="filter-status" data-event="filter_change" data-attribution="room_filter">
@@ -809,46 +811,47 @@
         </div>
       </div>
       <div class="room-grid">
-        <div class="room-card glass" data-status="available" data-gender="female">
+        <div class="room-card" data-status="available" data-gender="female">
           <div class="room-top"><h4>Room A1</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Modern Single</span><span>Female Floor</span><span>Ground Floor</span></div>
           <div class="room-price">R10,900 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room A1">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room A1">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="male">
+        <div class="room-card" data-status="available" data-gender="male">
           <div class="room-top"><h4>Room B2</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Modern Single</span><span>Male Floor</span><span>1st Floor</span></div>
           <div class="room-price">R10,900 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room B2">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room B2">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Room C3</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Deluxe Single</span><span>Mixed Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R12,100 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room C3">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room C3">Book This Room</a>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="female">
+        <div class="room-card" data-status="taken" data-gender="female">
           <div class="room-top"><h4>Room A2</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Modern Single</span><span>Female Floor</span><span>Ground Floor</span></div>
           <div class="room-price">R10,900 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="taken" data-gender="male">
+        <div class="room-card" data-status="taken" data-gender="male">
           <div class="room-top"><h4>Room B1</h4><span class="room-status room-status--taken">Occupied</span></div>
           <div class="room-specs"><span>Modern Single</span><span>Male Floor</span><span>1st Floor</span></div>
           <div class="room-price">R10,900 <em>/month</em></div>
-          <button class="btn btn--outline btn--sm btn--full" disabled>Join Waitlist</button>
+          <button class="btn btn--ghost btn--sm btn--full" disabled>Join Waitlist</button>
         </div>
-        <div class="room-card glass" data-status="available" data-gender="mixed">
+        <div class="room-card" data-status="available" data-gender="mixed">
           <div class="room-top"><h4>Room C1</h4><span class="room-status room-status--open">Available</span></div>
           <div class="room-specs"><span>Deluxe Single</span><span>Mixed Floor</span><span>2nd Floor</span></div>
           <div class="room-price">R12,100 <em>/month</em></div>
-          <a href="#contact" data-route="contact" class="btn btn--gold btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room C1">Book This Room</a>
+          <a href="#contact" data-route="contact" class="btn btn--fill btn--sm btn--full" data-attribution="room_card" data-event="book_click" data-location="vredehoek" data-room="Room C1">Book This Room</a>
         </div>
       </div>
     </div>
 
     <div class="fin-section">
+    <div class="eyebrow"><span>Financial</span></div>
       <h2 class="section-title">Financial <span>Details</span></h2>
       <div class="fin-grid">
         <div class="fin-item"><span class="fin-label">Monthly Rental</span><span class="fin-val">From R10,900</span><span class="fin-note">Per person, per month</span></div>
@@ -857,7 +860,7 @@
         <div class="fin-item"><span class="fin-label">Lockers (Optional)</span><span class="fin-val">Available</span><span class="fin-note">Enquire for pricing</span></div>
       </div>
       <p class="fin-terms">Florida Road, Vredehoek, Cape Town · Deposit required to secure booking. All utilities and uncapped Wi-Fi included in rental.</p>
-      <a href="#contact" data-route="contact" class="btn btn--gold" data-attribution="financial_section" data-event="apply_click" data-location="vredehoek">Apply for Florida Road</a>
+      <a href="#contact" data-route="contact" class="btn btn--fill" data-attribution="financial_section" data-event="apply_click" data-location="vredehoek">Apply for Florida Road</a>
     </div>
   </section>
 
@@ -866,11 +869,11 @@
     <div class="page-wrap">
     <div class="page-head">
       <span class="page-eyebrow">Get In Touch</span>
-      <h1 class="page-title">Secure your<br><span>space.</span></h1>
+      <h1 class="t-display">Secure your<br><em>space.</em></h1>
     </div>
     <div class="contact-layout">
-      <div class="contact-info glass">
-        <h3>Rental Enquiries</h3>
+      <div class="contact-info">
+        <span class="q-place">Rental Enquiries</h3>
         <div class="ci-block">
           <span class="ci-label">Phone / WhatsApp</span>
           <a href="tel:+27664517446" data-attribution="contact_page" data-event="phone_click">+27 66 451 7446</a>
@@ -888,8 +891,8 @@
           <p>Rosebank • Green Point • Sea Point<br>Kloof Nek • City Bowl • Vredehoek</p>
         </div>
       </div>
-      <form class="contact-form glass" id="enquiryForm" data-attribution="contact_form" data-event="form_submit">
-        <h3>Enquiry Form</h3>
+      <form class="contact-form" id="enquiryForm" data-attribution="contact_form" data-event="form_submit">
+        <span class="q-place">Enquiry Form</h3>
         <div class="form-field"><label for="fName">Full Name</label><input type="text" id="fName" name="name" required data-event="form_field_name"></div>
         <div class="form-field"><label for="fEmail">Email Address</label><input type="email" id="fEmail" name="email" required data-event="form_field_email"></div>
         <div class="form-field"><label for="fMobile">Mobile Number</label><input type="tel" id="fMobile" name="mobile" required data-event="form_field_mobile"></div>
@@ -906,7 +909,7 @@
           </select>
         </div>
         <div class="form-field"><label for="fMsg">Message (optional)</label><textarea id="fMsg" name="message" rows="3" data-event="form_field_message"></textarea></div>
-        <button type="submit" class="btn btn--gold btn--full" data-attribution="contact_form" data-event="form_submit_click">Send Enquiry →</button>
+        <button type="submit" class="btn btn--fill btn--full" data-attribution="contact_form" data-event="form_submit_click">Send Enquiry →</button>
         <p class="form-note">We respond within 24 hours. Spaces are limited — apply early.</p>
       </form>
     </div>
@@ -915,7 +918,7 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer glass">
+<footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-logo">METROPOLE</span>
