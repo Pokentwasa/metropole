@@ -40,15 +40,86 @@
   <!-- ============ VIEW: HOME ============ -->
   <section class="view is-visible" data-view="home">
     <div class="hero">
-      <div class="hero-img"><img src="https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=1800&q=80&fit=crop" alt="Cape Town Table Mountain"></div>
-      <div class="hero-content">
+      <!-- Full-bleed background — replace src with real property photo when available -->
+      <div class="hero-bg"><img src="https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=1800&q=80&fit=crop" alt="Cape Town — Metropole Student Accommodation"></div>
+
+      <!-- Pill badges scattered over image -->
+      <div class="hero-pills">
+        <span class="hero-pill" style="top:18%;left:8%">🏊 Rooftop Pool — Green Point</span>
+        <span class="hero-pill" style="top:22%;right:22%">⛰ Mountain Views — Kloof Nek</span>
+        <span class="hero-pill" style="top:55%;right:6%">🏙 CBD Access — The York</span>
+        <span class="hero-pill" style="bottom:28%;left:6%">🏗 New Build — Vredehoek</span>
+      </div>
+
+      <!-- Featured location HUD card — top right -->
+      <div class="hero-hud glass">
+        <div class="hud-top">
+          <span class="hud-label">Featured</span>
+          <span class="hud-live"><span class="hud-dot"></span>Live</span>
+        </div>
+        <h3 class="hud-name">Green Point</h3>
+        <div class="hud-stats">
+          <div class="hud-stat"><span class="hud-stat-num">4</span><span class="hud-stat-label">Rooms Available</span></div>
+          <div class="hud-stat"><span class="hud-stat-num">R9,775</span><span class="hud-stat-label">From / month</span></div>
+          <div class="hud-stat"><span class="hud-stat-num">R400</span><span class="hud-stat-label">Admin Fee</span></div>
+        </div>
+        <a href="#location-green-point" data-route="location-green-point" class="btn btn--gold btn--sm" style="width:100%;justify-content:center;margin-top:4px" data-attribution="hero_hud" data-event="hud_view_click" data-location="green-point">View Rooms →</a>
+      </div>
+
+      <!-- Bold headline — bottom left -->
+      <div class="hero-headline">
         <span class="hero-badge">6 Locations Across Cape Town</span>
         <h1 class="hero-title">Premium Student<br>Accommodation<br>Cape Town</h1>
         <p class="hero-sub">Modern, Secure Living for Focused Students</p>
-        <div class="hero-actions">
-          <a href="#locations" data-route="locations" class="btn btn--gold" data-attribution="hero" data-event="explore_click">Explore Buildings ›</a>
-          <a href="#contact" data-route="contact" class="btn btn--outline" data-attribution="hero" data-event="enquire_click">Enquire Now</a>
+      </div>
+
+      <!-- Search bar — anchored bottom -->
+      <div class="hero-search glass">
+        <div class="search-field">
+          <label>Location</label>
+          <select data-attribution="hero_search" data-event="search_location">
+            <option value="">All Buildings</option>
+            <option>Rosebank</option>
+            <option>Green Point</option>
+            <option>East of Main — Sea Point</option>
+            <option>Kloof Nek</option>
+            <option>The York — CBD</option>
+            <option>Florida Road — Vredehoek</option>
+          </select>
         </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label>Move-In</label>
+          <select data-attribution="hero_search" data-event="search_movein">
+            <option value="">Any Date</option>
+            <option>Jan 2026</option>
+            <option>Feb 2026</option>
+            <option>Mar 2026</option>
+            <option>Mid-Year 2026</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label>Room Type</label>
+          <select data-attribution="hero_search" data-event="search_type">
+            <option value="">Any Type</option>
+            <option>Single En-suite</option>
+            <option>Premium Single</option>
+            <option>Shared Unit</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label>Budget</label>
+          <select data-attribution="hero_search" data-event="search_budget">
+            <option value="">Any Budget</option>
+            <option>Under R10,000</option>
+            <option>R10,000 – R11,500</option>
+            <option>R11,500 – R13,000</option>
+            <option>R13,000+</option>
+          </select>
+        </div>
+        <a href="#locations" data-route="locations" class="btn btn--gold search-btn" data-attribution="hero_search" data-event="search_submit">Search Rooms</a>
       </div>
     </div>
 
@@ -208,9 +279,31 @@
     <div class="loc-hero">
       <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80&fit=crop" alt="Metropole Green Point">
       <div class="loc-hero-overlay"></div>
+
+      <!-- Location pill badges -->
+      <div class="loc-pills">
+        <span class="hero-pill">🏊 Rooftop Pool</span>
+        <span class="hero-pill">🌊 V&A Waterfront — 5 min</span>
+        <span class="hero-pill">🚌 MyCiti Steps Away</span>
+      </div>
+
+      <!-- HUD summary card -->
+      <div class="loc-hud glass">
+        <div class="hud-top">
+          <span class="hud-label">Green Point</span>
+          <span class="hud-live"><span class="hud-dot"></span>Live Availability</span>
+        </div>
+        <div class="hud-stats">
+          <div class="hud-stat"><span class="hud-stat-num">4</span><span class="hud-stat-label">Available Now</span></div>
+          <div class="hud-stat"><span class="hud-stat-num">R9,775</span><span class="hud-stat-label">From / month</span></div>
+          <div class="hud-stat"><span class="hud-stat-num">R400</span><span class="hud-stat-label">Admin Fee</span></div>
+        </div>
+        <p class="hud-note">Incl. Wi-Fi · Utilities · Security</p>
+      </div>
+
       <div class="loc-hero-content">
         <a href="#locations" data-route="locations" class="back-link">← All Locations</a>
-        <h1 class="page-title">Metropole<br><span>Green Point</span></h1>
+        <h1 class="page-title">Metropole<br>Green Point</h1>
         <p class="loc-hero-sub">Premium co-living in the heart of Cape Town's trendiest neighbourhood.</p>
       </div>
     </div>
